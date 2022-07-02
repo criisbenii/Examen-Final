@@ -1,0 +1,503 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;700&display=swap');
+/*
+Esta pagina esta creada en MobileFirst
+Cristian Benitez
+crisbg2@hotmail.com
+*/
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+:root {
+    --naranja: rgb(242, 95, 58);
+    --naranjaClaro: rgba(242, 95, 58, 0.219);
+    --naranjaBotones: rgba(233, 69, 29, 0.219);
+    --azulOscuro: rgba(36, 46, 82, 1);
+    --azulMuyOscuro: rgba(30, 30, 38, 1);
+    --grisClaro: rgba(250, 250, 250, 1);
+    --grisOscuro: rgba(179, 178, 183, 1);
+    --blanco: rgba(255, 255, 255, 1);
+}
+
+.encabezado nav {
+    display: none;
+}
+.encabezado button {
+    display: none;
+}
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+
+}
+.encabezado .fa-bars {
+    font-size: 1.5rem;
+    color: var(--azulOscuro);
+}
+.section1 {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-bottom: 12vh;
+}
+.graficos {
+    max-width: 100vw;
+}
+.articulo1-1 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+h1 {
+    font-size: 2rem;
+    color: var(--azulOscuro);
+}
+p {
+    color: var(--grisOscuro);
+}
+button {
+    background-color: var(--naranja);
+    border: none;
+    border-radius: 1.875rem;
+    padding: 0.937rem;
+    color: var(--blanco);
+}
+.articulo1 {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-bottom: 10vh;
+}
+h2 {
+    color: var(--azulOscuro);
+}
+.section2 .listaSection2 ol {
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.bg-orange::before {
+    background-color: var(--naranja);
+}
+ol {
+    counter-reset: myOrderedListItemsCounter;
+
+}
+ol li {
+    color: var(--azulOscuro);
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    position: relative;
+    background-color: var(--naranjaClaro);
+    border-radius: 40px 0px 0px 40px;
+}
+ol li:before {
+    counter-increment: myOrderedListItemsCounter;
+    content: counter(myOrderedListItemsCounter);
+    margin-right: .5em;
+    padding-left: 9px;
+    padding-right: 9px;
+    border-radius: 39%;
+    font-size: 1.5rem;
+    padding: 5px 25px;
+    color: white;
+}
+.listaDesktop {
+    display: none;
+}
+.section3 {
+    display: none;
+}
+.section3-1 {
+    text-align: center;
+}
+.card {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 10vh;
+    text-align: center;
+    width: 80vw;
+    background-color: var(--grisClaro);
+}
+h6 {
+    font-size: 1rem;
+    color: var(--azulOscuro);
+}
+.section3-1 img {
+    position: relative;
+    top: -30px;
+    width: 20vw;
+}
+.perfil-description {
+    position: relative;
+    bottom: 2vh;
+}
+.fa-circle {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    color: var(--naranja);
+    font-size: 10px;
+}
+.section4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--blanco);
+    text-align: center;
+    margin-top: 2vh;
+    background-color: var(--naranja);
+    height: 30vh;
+    background-image: url("../img/bg-simplify-section-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: 120%;
+    gap: 5%;
+}
+.section4 h4 {
+    font-size: 1.5rem;
+}
+#botonS4 {
+    color: var(--naranja);
+    background-color: var(--blanco);
+}
+footer {
+    padding-top: 4vh;
+    background-color: var(--azulMuyOscuro);
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+#botonfooter {
+    background-color: var(--naranja);
+    color: var(--blanco);
+    border-radius: 20px 20px 20px 20px;
+    padding: 0.378rem 1rem;
+}
+.formulario {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    order: 4;
+}
+.formu{
+    display: flex;
+}
+.copy{
+    display: none;
+}
+.copy1{
+    text-align: center;
+    font-size: 0.5rem;
+}
+.formulario input {
+    font-size: 1rem;
+    height: 2rem;
+    padding: 1em;
+    border-radius: 15px 15px 15px 15px;
+    border: none;
+}
+.lista {
+    display: none;
+}
+.listamobile {
+    display: flex;
+    flex-direction: row;
+    order: 3;
+    gap: 15vw;
+    color: white;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+.logo-redes {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2vh;
+}
+.redes {
+    display: flex;
+    justify-content: center;
+    gap: 2vh;
+    order: 2;
+}
+footer i {
+    color: white;
+}
+footer a{
+    color: white;
+    list-style-type:none;
+}
+footer input::placeholder{
+   color: var(--naranjaClaro);
+}
+/*Apartir de aqui comienza la version dekstop personalmente elegi que comience despues de los 1000Pixeles*/
+@media (min-width:1000px) {
+
+    * {
+        margin: 0px;
+        box-sizing: border-box;
+        padding: 0px;
+    }
+
+    body {
+        background-image: url("../img/bg-desktop1.svg"), url("../img/bg-desktop2.svg");
+        background-position: 120% -20%, -50% 65%;
+        background-repeat: no-repeat;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    header .fa-solid {
+        display: none;
+    }
+
+    .encabezado {
+        margin-left: 10%;
+        margin-right: 10%;
+        display: flex;
+        align-items: center;
+    }
+    .encabezado nav a{
+        color: var(--azulOscuro);
+    }
+
+    .encabezado nav{
+        display: flex;
+    }
+    header a:hover{
+        color: var(--grisOscuro);
+        transition: .5s;
+    }
+    header a:hover{
+        font-size: 1.5rem;
+        transition: 1s;
+    }
+    button:hover{
+        background-color: var(--naranjaBotones); 
+        cursor: pointer;
+        transition: .5s;
+    }
+ 
+     #botonS4:hover{
+        background-color: var(--grisClaro);
+    }
+    
+    .encabezado button {
+        display: inline-block;
+    }
+
+    .encabezado a {
+        color: var(--azlOscuro);
+    }
+
+    .encabezado nav ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+    }
+
+    .section1 {
+        margin-left: 10%;
+        margin-right: 10%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .articulo1-1 h1 {
+        font-size: 3rem;
+    }
+
+    .articulo1-1 {
+        width: 30rem;
+        text-align: left;
+    }
+
+    .listaSection2 {
+        display: none;
+    }
+    .section2 {
+        margin-left: 10%;
+        margin-right: 10%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10rem;
+    }
+
+    .section2 h2 {
+        font-size: 2rem;
+    }
+
+    .articulo1 {
+        width: 30rem;
+        margin-left: 0vw ;
+        margin-right: 0vw;
+    }
+
+    .articulo1-2 h2 {
+        text-align: left;
+        font-size: 36px;
+    }
+
+    .articulo1-2 p {
+        text-align: left;
+    }
+
+    .listaDesktop {
+        display: flex;
+        flex-direction: column;
+        width: 40rem;
+    }
+    .listaDesktop h2{
+        font-size: 1.5rem;
+    }
+
+    .listaDesktop div {
+        display: flex;
+        align-items: center;
+        margin-left: -15px;
+        gap: 0.5rem;
+    }
+
+    .listaDesktop div span {
+        background-color: var(--naranja);
+        font-size: 1.5rem;
+        padding-left: 0.8rem;
+        padding-right: 0.8rem;
+        border-radius: 50px;
+        color: white;
+        font-weight: 400;
+    }
+
+    .listaDesktop p {
+        margin-left: 2.9rem;
+    }
+
+    .section3-1 {
+        display: none;
+    }
+
+    .section3 {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        height:40rem;
+        justify-content: space-around;
+    }
+
+    .containerCards {
+        text-align: center;
+        height: 18rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .testimonios {
+        width: 25rem;
+        background-color: var(--grisClaro);
+    }
+
+    h3 {
+        color: black;
+    }
+
+    .contenido {
+        color: var(--grisOscuro);
+    }
+
+    .avatar {
+        width: 6rem;
+    }
+
+    .section3 img {
+        position: relative;
+        bottom: 3.2rem;
+    }
+
+    .section4 {
+        height: 13rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 15rem;
+    }
+
+    .logo-redes {
+        display: flex;
+        height: 8.75rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 1.4rem;
+    }
+
+    .listamobile ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 8.75rem;
+
+    }
+
+    .formu {
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    .formulario p {
+        font-size: 0.8rem;
+    }
+    .copy{
+        display: flex;
+    }
+    .copy1{
+        display: none;
+    }
+    footer i:hover{
+        color: var(--naranja); 
+        font-size: 2rem;
+        transition: 1s;
+    }
+    footer a{
+        color: white;
+    }
+    footer a:hover{
+        color: var(--naranja);
+    }
+}
